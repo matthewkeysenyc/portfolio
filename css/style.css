@@ -121,8 +121,14 @@ ul {
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 28px;
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .nav__logo-img {
+    height: 44px;
+  }
 }
 
 .nav__toggle {
