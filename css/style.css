@@ -531,12 +531,18 @@ section[id] {
   position: relative;
   z-index: 1;
   padding: 100px 0;
+  min-height: 80vh;
   overflow: hidden;
 }
 
 .services__bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
   z-index: 0;
 }
 
@@ -553,10 +559,13 @@ section[id] {
 }
 
 .services__bg-img {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 100%;
+  width: auto;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
 }
 
 .services__content {
