@@ -188,10 +188,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   lightboxClose.addEventListener('click', closeLightbox);
 
-  // Tap to close (only when not zoomed)
+  // Tap to close (only when not zoomed) — close unless tapping the close button
   lightbox.addEventListener('click', (e) => {
     if (scale > 1) return;
-    if (e.target === lightbox || e.target === lightboxImg) closeLightbox();
+    if (e.target !== lightboxClose) closeLightbox();
   });
 
   document.addEventListener('keydown', (e) => {
@@ -207,9 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        const navHeight = nav.offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
