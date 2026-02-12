@@ -233,7 +233,7 @@ ul {
 }
 
 .hero__bg {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
 }
@@ -479,16 +479,13 @@ ul {
 
 .gallery__item {
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   border: 1px solid rgba(196, 30, 30, 0.15);
-  aspect-ratio: 16 / 10;
 }
 
 .gallery__item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -645,8 +642,7 @@ ul {
 
 .casestudy__item img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
