@@ -227,8 +227,7 @@ ul {
    ============================================ */
 .hero {
   position: relative;
-  height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   overflow: hidden;
 }
 
@@ -254,7 +253,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: 30% 30%;
 }
 
 .hero__content {
@@ -688,25 +687,36 @@ ul {
   user-select: none;
 }
 
+.contact__logo {
+  height: 80px;
+  width: auto;
+  margin: 0 auto 1.5rem;
+}
+
 .contact__name {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: var(--white);
   margin-bottom: 0.25rem;
 }
 
 .contact__role {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--red);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
+.contact__details {
+  text-align: center;
+}
+
 .contact__details p {
-  margin-bottom: 0.3rem;
-  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.3rem;
 }
 
 .contact__details a:hover {
@@ -716,6 +726,7 @@ ul {
 .contact__social {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
   margin-top: 2rem;
 }
@@ -724,7 +735,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--light-gray);
   transition: color 0.3s ease;
 }
