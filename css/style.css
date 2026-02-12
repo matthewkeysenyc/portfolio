@@ -116,16 +116,13 @@ ul {
 }
 
 .nav__logo {
-  font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--white);
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.nav__logo:hover {
-  color: var(--red);
+.nav__logo-img {
+  height: 44px;
+  width: auto;
 }
 
 .nav__toggle {
@@ -230,7 +227,7 @@ ul {
 }
 
 .hero__bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 0;
 }
@@ -279,16 +276,13 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  font-family: var(--font-serif);
-  font-size: clamp(5rem, 20vw, 12rem);
-  font-weight: 900;
-  line-height: 0.9;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 8rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--white);
-  letter-spacing: -0.02em;
-}
-
-.hero__dot {
-  color: var(--red);
+  text-align: center;
+  white-space: nowrap;
 }
 
 
@@ -297,6 +291,8 @@ ul {
    About
    ============================================ */
 .about {
+  position: relative;
+  z-index: 1;
   padding: 80px 0;
   background: var(--dark);
 }
@@ -337,9 +333,7 @@ ul {
 
 .about__photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center 20%;
+  object-fit: contain;
   border: 1px solid rgba(196, 30, 30, 0.3);
 }
 
@@ -378,6 +372,8 @@ ul {
    Brands & Experience
    ============================================ */
 .brands {
+  position: relative;
+  z-index: 1;
   padding: 80px 0;
   background: var(--black);
   border-top: 1px solid var(--medium-gray);
@@ -447,6 +443,8 @@ ul {
    Gallery
    ============================================ */
 .gallery {
+  position: relative;
+  z-index: 1;
   padding: 80px 0;
   background: var(--dark);
 }
@@ -523,6 +521,7 @@ ul {
    ============================================ */
 .services {
   position: relative;
+  z-index: 1;
   padding: 100px 0;
   overflow: hidden;
 }
@@ -622,6 +621,8 @@ ul {
    Case Study / Recent Work
    ============================================ */
 .casestudy {
+  position: relative;
+  z-index: 1;
   padding: 80px 0;
   background: var(--black);
   border-top: 1px solid var(--medium-gray);
@@ -654,6 +655,8 @@ ul {
    Contact
    ============================================ */
 .contact {
+  position: relative;
+  z-index: 1;
   padding: 80px 0 60px;
   background: var(--dark);
   border-top: 1px solid var(--medium-gray);
@@ -899,20 +902,13 @@ ul {
     object-position: center;
   }
 
-  .about__photo {
-    aspect-ratio: 3 / 4;
-  }
 
   .gallery__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .gallery__item--wide {
     grid-column: span 2;
-  }
-
-  .gallery__item {
-    aspect-ratio: 16 / 11;
   }
 
   .casestudy__grid {
