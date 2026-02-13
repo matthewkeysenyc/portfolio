@@ -294,6 +294,91 @@ section[id] {
   white-space: nowrap;
 }
 
+.hero__location {
+  font-size: 0.55em;
+  letter-spacing: 0.2em;
+  margin-top: -0.3em;
+}
+
+.hero__subtitle {
+  position: absolute;
+  left: 24px;
+  bottom: 20%;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.2rem, 4vw, 2.8rem);
+  color: var(--red);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  text-align: left;
+  text-shadow: 0 0 30px var(--red-glow), 0 0 60px rgba(196, 30, 30, 0.15);
+}
+
+
+
+/* ============================================
+   The Brand
+   ============================================ */
+.brand {
+  position: relative;
+  z-index: 1;
+  padding: 48px 0;
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--red) 40%, var(--red) 60%, var(--light-gray) 100%);
+}
+
+.brand::before,
+.brand::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 16px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.brand::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--dark) 0%, rgba(10,10,10,0.6) 30%, rgba(10,10,10,0) 100%);
+}
+
+.brand::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--dark) 0%, rgba(10,10,10,0.6) 30%, rgba(10,10,10,0) 100%);
+}
+
+.brand__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+.brand__quote {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.brand__quote p {
+  margin-bottom: 1.5rem;
+}
+
+.brand__attribution {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
 
 /* ============================================
@@ -302,7 +387,7 @@ section[id] {
 .about {
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 40px 0;
   background: var(--dark);
 }
 
@@ -383,7 +468,7 @@ section[id] {
 .brands {
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 40px 0;
   background: var(--black);
   border-top: 1px solid var(--medium-gray);
 }
@@ -454,7 +539,7 @@ section[id] {
 .gallery {
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 40px 0;
   background: var(--dark);
 }
 
@@ -530,7 +615,7 @@ section[id] {
 .services {
   position: relative;
   z-index: 1;
-  padding: 100px 0;
+  padding: 40px 0;
   min-height: 80vh;
   overflow: hidden;
 }
@@ -591,7 +676,7 @@ section[id] {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 600px;
+  width: 100%;
 }
 
 .services__card {
@@ -640,7 +725,7 @@ section[id] {
 .casestudy {
   position: relative;
   z-index: 1;
-  padding: 80px 0;
+  padding: 40px 0;
   background: var(--black);
   border-top: 1px solid var(--medium-gray);
 }
@@ -673,7 +758,7 @@ section[id] {
 .contact {
   position: relative;
   z-index: 1;
-  padding: 80px 0 60px;
+  padding: 40px 0;
   background: var(--dark);
   border-top: 1px solid var(--medium-gray);
 }
@@ -831,7 +916,7 @@ section[id] {
   }
 
   .about {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
   .about__grid {
@@ -849,7 +934,7 @@ section[id] {
   }
 
   .brands {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
   .brands__grid {
@@ -862,7 +947,7 @@ section[id] {
   }
 
   .gallery {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
   .gallery__grid {
@@ -875,7 +960,7 @@ section[id] {
   }
 
   .casestudy {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
   .casestudy__grid {
@@ -888,7 +973,7 @@ section[id] {
   }
 
   .services {
-    padding: 140px 0;
+    padding: 60px 0;
   }
 
   .services__cards {
@@ -901,7 +986,7 @@ section[id] {
   }
 
   .contact {
-    padding: 120px 0 80px;
+    padding: 60px 0;
   }
 
 }

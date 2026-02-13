@@ -8,23 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
-    <a href="#hero" class="nav__logo"><img src="assets/mk.jpeg" alt="MK logo" class="nav__logo-img"></a>
+    <a href="#hero" class="nav__logo"><img src="assets/logo-no-bg.png" alt="MK logo" class="nav__logo-img"></a>
     <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <ul class="nav__menu" id="nav-menu">
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="#gallery" class="nav__link">Our Work</a></li>
+      <li><a href="#brand" class="nav__link">The Brand</a></li>
       <li><a href="#about" class="nav__link">About</a></li>
       <li><a href="#brands" class="nav__link">Experience</a></li>
-      <li><a href="#gallery" class="nav__link">Portfolio</a></li>
-      <li><a href="#services" class="nav__link">Services</a></li>
       <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
     </ul>
   </nav>
@@ -37,7 +38,178 @@
     <div class="hero__content">
       <p class="hero__tagline">creatively curated.<br>inclusively innovative.<br>bespoke beauty.</p>
     </div>
-    <div class="hero__logo">The Creative Edge</div>
+    <div class="hero__logo">The Creative Edge
+      <div class="hero__location">NYC</div>
+    </div>
+    <div class="hero__subtitle">A fresh and innovative<br>approach to creative consulting.</div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services__bg">
+      <img src="assets/page-07.png" alt="Creative direction services" class="services__bg-img">
+    </div>
+    <div class="container">
+      <div class="services__content">
+        <h2 class="services__title">
+          <span>Create</span>
+          <span>Your</span>
+          <span>Direction</span>
+        </h2>
+        <div class="services__cards">
+          <div class="services__card">
+            <h3>Bespoke Beauty</h3>
+            <ul>
+              <li>Hair styling</li>
+              <li>Makeup artistry</li>
+              <li>Cosmetics &amp; skincare</li>
+              <li>Bridal &amp; editorial beauty</li>
+              <li>Headshots &amp; photo shoots</li>
+              <li>1:1 makeup lessons</li>
+              <li>Social media content &amp; reels</li>
+            </ul>
+          </div>
+          <div class="services__card">
+            <h3>Image Consulting</h3>
+            <ul>
+              <li>Wardrobe styling</li>
+              <li>Closet curation</li>
+              <li>Fashion &amp; clothing</li>
+              <li>Accessories</li>
+              <li>Personal style direction</li>
+              <li>Backstage fashion &amp; runway</li>
+              <li>Content styling for social media</li>
+            </ul>
+          </div>
+          <div class="services__card">
+            <h3>Event Planning</h3>
+            <ul>
+              <li>Creative concept &amp; design</li>
+              <li>VIP &amp; press events</li>
+              <li>Concept to execution</li>
+              <li>Vendor coordination</li>
+              <li>On-site creative direction</li>
+              <li>Social media &amp; video production</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Our Work</h2>
+
+      <!-- Beauty -->
+      <div class="gallery__category">
+        <h3 class="gallery__category-title">Beauty</h3>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/page-04.png" alt="Behind the scenes - beauty and editorial work">
+            <div class="gallery__overlay">
+              <span>Behind the Scenes</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/page-11.png" alt="Glam makeup artistry">
+            <div class="gallery__overlay">
+              <span>Glam</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/page-14.png" alt="Still shots for social media">
+            <div class="gallery__overlay">
+              <span>Still Shots</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Styling -->
+      <div class="gallery__category">
+        <h3 class="gallery__category-title">Styling</h3>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/page-05.png" alt="Fashion styling and creative direction">
+            <div class="gallery__overlay">
+              <span>Fashion</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/page-12.png" alt="Wardrobe and clothing styling">
+            <div class="gallery__overlay">
+              <span>Wardrobe</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/page-10.png" alt="Accessories and styling details">
+            <div class="gallery__overlay">
+              <span>Accessories</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events -->
+      <div class="gallery__category">
+        <h3 class="gallery__category-title">Events</h3>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/events-5.jpg" alt="Creative and brand direction">
+            <div class="gallery__overlay">
+              <span>Creative &amp; Brand Direction</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/events-4.jpg" alt="VIP and press events">
+            <div class="gallery__overlay">
+              <span>VIP &amp; Press</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/events-2.jpg" alt="Private events with full bar service">
+            <div class="gallery__overlay">
+              <span>Private Events</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img src="assets/events-1.jpg" alt="Baby shower event planning">
+            <div class="gallery__overlay">
+              <span>Baby Showers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1:1 Custom -->
+      <div class="gallery__category">
+        <h3 class="gallery__category-title">1:1 Custom Appointments</h3>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--wide">
+            <img src="assets/page-06.png" alt="Custom beauty appointments and transformations">
+            <div class="gallery__overlay">
+              <span>Custom Appointments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Brand -->
+  <section class="brand" id="brand">
+    <div class="container">
+      <h2 class="brand__heading">The Brand</h2>
+      <blockquote class="brand__quote">
+        <p>Our mission is redefining what society tells us is beautiful. Makeup and hair styling should enhance your beauty, not cover or mask your natural self.</p>
+        <p>Whether you need bespoke beauty services, image consulting, or full-scale event planning, we have a deep passion to ensure that humans of all shapes and sizes, small to tall, swervy to curvy, leave our experiences feeling the very best version of themselves.</p>
+        <p>If you feel more empowered, confident, stand a bit taller, hold your head a little higher, maybe even shine brighter from the inside out. That is the essence of our intention.</p>
+        <p>Excellence in service is a given, but what matters most is our connection and experience working together and bringing your vision to a reality.</p>
+        <footer class="brand__attribution">The Creative Edge&mdash;NYC</footer>
+      </blockquote>
+    </div>
   </section>
 
   <!-- About -->
@@ -115,129 +287,13 @@ About Me
     </div>
   </section>
 
-  <!-- Portfolio Gallery -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <h2 class="section-title">Portfolio</h2>
-
-      <!-- BTS -->
-      <div class="gallery__category">
-        <h3 class="gallery__category-title">BTS</h3>
-        <div class="gallery__grid">
-          <div class="gallery__item gallery__item--wide">
-            <img src="assets/page-04.png" alt="Behind the scenes - beauty and editorial work" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Behind the Scenes</span>
-            </div>
-          </div>
-          <div class="gallery__item">
-            <img src="assets/page-13.png" alt="BTS in action - on set creative direction" loading="lazy">
-            <div class="gallery__overlay">
-              <span>In Action</span>
-            </div>
-          </div>
-          <div class="gallery__item">
-            <img src="assets/page-14.png" alt="BTS still shots for social media" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Still Shots</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fashion -->
-      <div class="gallery__category">
-        <h3 class="gallery__category-title">Fashion</h3>
-        <div class="gallery__grid">
-          <div class="gallery__item gallery__item--wide">
-            <img src="assets/page-05.png" alt="Fashion styling and creative direction" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Fashion</span>
-            </div>
-          </div>
-          <div class="gallery__item">
-            <img src="assets/page-11.png" alt="Glam makeup artistry" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Glam</span>
-            </div>
-          </div>
-          <div class="gallery__item">
-            <img src="assets/page-12.png" alt="Wardrobe and clothing styling" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Wardrobe</span>
-            </div>
-          </div>
-          <div class="gallery__item">
-            <img src="assets/page-10.png" alt="Accessories and styling details" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Accessories</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 1:1 Custom -->
-      <div class="gallery__category">
-        <h3 class="gallery__category-title">1:1 Custom Appointments</h3>
-        <div class="gallery__grid">
-          <div class="gallery__item gallery__item--wide">
-            <img src="assets/page-06.png" alt="Custom beauty appointments and transformations" loading="lazy">
-            <div class="gallery__overlay">
-              <span>Custom Appointments</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="services" id="services">
-    <div class="services__bg">
-      <img src="assets/page-07.png" alt="Creative direction services" class="services__bg-img">
-    </div>
-    <div class="container">
-      <div class="services__content">
-        <h2 class="services__title">
-          <span>Create</span>
-          <span>Your</span>
-          <span>Direction</span>
-        </h2>
-        <div class="services__cards">
-          <div class="services__card">
-            <h3>All Inclusive. Exclusive.</h3>
-            <ul>
-              <li>Complete creative proposal and design</li>
-              <li>Concept to execution</li>
-              <li>Studio, videographer, photographer</li>
-              <li>Wardrobe conception &amp; full styling</li>
-              <li>Hair, makeup, unlimited looks</li>
-            </ul>
-          </div>
-          <div class="services__card">
-            <h3>Concept to Content</h3>
-            <ul>
-              <li>Music video studio full day</li>
-              <li>Video x photography</li>
-              <li>Social media content: reels, stories, shorts</li>
-              <li>Candid behind the scenes</li>
-              <li>Choreography</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
   <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="contact__grid">
         <div class="contact__card">
-          <img src="assets/mk.jpeg" alt="MK logo" class="contact__logo">
-          <p class="contact__name">matthew l keyse</p>
+          <img src="assets/logo-no-bg.png" alt="MK logo" class="contact__logo">
+          <p class="contact__name">matthew keyse</p>
           <p class="contact__role">The Creative Edge</p>
         </div>
         <div class="contact__card">
@@ -273,6 +329,6 @@ About Me
     <img class="lightbox__img" src="" alt="">
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>
