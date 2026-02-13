@@ -568,9 +568,13 @@ section[id] {
 }
 
 .gallery__item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   position: relative;
   cursor: pointer;
   border: 1px solid rgba(196, 30, 30, 0.15);
+  overflow: hidden;
 }
 
 .gallery__item img {
@@ -846,65 +850,18 @@ section[id] {
   flex-shrink: 0;
 }
 
-
-/* ============================================
-   Lightbox
-   ============================================ */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  height: 100dvh;
-  z-index: 2000;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.lightbox.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.lightbox__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  font-size: 2rem;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  cursor: pointer;
-  line-height: 1;
-  z-index: 2001;
+/* GLightbox overrides */
+.gclose.gbtn {
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
 }
 
-.lightbox__close:hover {
-  color: var(--red);
-}
-
-.lightbox__img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  touch-action: none;
-  user-select: none;
-  -webkit-user-select: none;
-}
 
 
 /* ============================================
